@@ -1,0 +1,35 @@
+.modal__body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  grid-template-rows: 0.5fr 6fr;
+  width: 40%;
+  height: 80%;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(149, 118, 150);
+  border-radius: 1rem;
+}
+
+.modal__body input {
+  margin: 0.75rem 0.25rem 0.5rem 0.25rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+}
+
+.modal__body input:focus {
+  outline: 3px solid black;
+}
+
+.modal__bodyList {
+  width: 100%;
+  overflow: hidden;
+}
+
+.modal__bodyListContainer {
+  height: 80%;
+  padding: 1em;
+  overflow-y: scroll;
+}

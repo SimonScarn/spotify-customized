@@ -1,0 +1,58 @@
+.playlist {
+  flex: 0.8;
+  width: 100%;
+  padding-bottom: 100px;
+  overflow-y: auto;
+  color: #fff;
+  background-color: #121212;
+}
+
+.playlist__header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 3em;
+  padding-left: 60px;
+}
+
+.playlist__header img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.playlist__details {
+  display: flex;
+  gap: 20px;
+}
+
+.playlist__name {
+  padding: 0;
+  margin: 0;
+  font-size: 5em;
+}
+
+.playlist__toolbar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding-left: 60px;
+}
+
+.playlist__toolbar .MuiSvgIcon-root {
+  margin-left: 20px;
+  color: pink !important;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
+.playlist__recommendedRefreshBtn {
+  width: 200px;
+  margin-top: 1.5rem !important;
+  margin-left: 60% !important;
+  padding: 0.75em 1em !important;
+  border-radius: 10px !important;
+  color: white !important;
+  background: #6b0f1a !important;
+}

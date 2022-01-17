@@ -1,0 +1,65 @@
+::-webkit-scrollbar {
+  width: 0.75em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: #966ea3;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b0f1a;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a70d1f;
+}
+
+@supports (scrollbar-color: #6b0f1a #966ea3) {
+  * {
+    scrollbar-color: #6b0f1a #966ea3;
+    scrollbar-width: thin;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  
+}
+
+.App {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.player__body {
+  display: flex;
+  height: 100vh;
+  min-height: 100%;
+  outline: 3px solid purple;
+}
+
+.view__toolbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  padding-left: 25px;
+}
+
+.followBtn {
+  height: 25px !important;
+  width: 100px !important;
+  border: 1px solid whitesmoke !important;
+  color: whitesmoke !important;
+}
+
+.playBtn {
+  font-size: 3rem !important;
+  color: #966ea3 !important;
+}

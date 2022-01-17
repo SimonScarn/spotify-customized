@@ -1,0 +1,63 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.login__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__top div,
+.login__bottom div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.login__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 25px;
+  border-top: 4px solid aqua;
+}
+
+.login img {
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.login__loginBtn,
+.login__codeBtn,
+.login__codeBtn--custom ,
+.login__appBtn
+ {
+  width: 200px !important;
+  height: 50px !important;
+  color: whitesmoke !important;
+  background-color: aquamarine !important;
+  font-weight: 900 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.login__codeBtn {
+  background-color: purple !important;
+}
+
+.login__codeBtn--custom {
+  background-color: green !important;
+  color:  black !important;
+}
+
+
+
+.login__appBtn {
+    color:  black !important;
+}

@@ -1,0 +1,107 @@
+.sidebar {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  background-color: black;
+  color: #eee;
+}
+
+.sidebar__option {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  transition: .2s color ease-in;
+}
+
+.sidebar__option:hover {
+  color: grey;
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.sidebar__option > p {
+  margin-left: 10px;
+}
+
+.sidebar__toolbar {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.sidebar > hr {
+  background-color: grey;
+  width: 90%;
+  opacity: 0.7;
+}
+
+.sidebar__search {
+  margin-top: 5px;
+}
+
+.sidebar__input {
+  display: block;
+  height: 25px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  box-shadow: rgb(24, 29, 34) 0px 20px 30px -10px;
+  background-color: rgb(153, 202, 173);
+  font-weight: 700;
+}
+
+.sidebar__input:focus {
+  background-color: pink;
+  outline: 2px solid aqua;
+  transition: background-color 0.2s linear;
+}
+
+.sidebar__navLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar__navLink--selected {
+  color: black;
+  background: whitesmoke;
+}
+
+.sidebar__playlistsContainer {
+  margin-top: 15px;
+  margin-bottom: 70px;
+  overflow-y: auto;
+  border-top: 1px solid whitesmoke;
+}
+
+.sidebar__playlist {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 0.5em 1em;
+  transition: color .2s linear;
+}
+
+.sidebar__playlist:hover {
+  color: rgb(164, 109, 200);
+}
+
+.sidebar__playlist p {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon__sidebar {
+  visibility: hidden;
+}
+
+.sidebar__playlist:hover .icon__sidebar {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.sidebar_sortOptions {
+  background: #eee;
+  color: black;
+}

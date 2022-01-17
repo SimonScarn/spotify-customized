@@ -1,0 +1,27 @@
+.search__header {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* main */
+
+.search__results {
+  padding: 20px 50px 50px 20px;
+}
+
+.search__results h2 {
+  color: #eee;
+}
+
+.toggleContentIcon {
+  color: grey;
+}
+
+.artistAvatar {
+  border-radius: 50%;
+}
+
+.search__categories {
+  padding-left: 30px;
+}

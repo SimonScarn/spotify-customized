@@ -1,0 +1,53 @@
+.showRow {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  height: 130px;
+  padding: 10px;
+  border-bottom: 1px solid whitesmoke;
+  cursor: pointer;
+}
+
+.showRow::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(164, 109, 200);
+  opacity: 0;
+}
+
+.showRow:hover::before {
+  opacity: .1;
+}
+
+.showRow img {
+  height: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 1rem;
+}
+
+.showRow__episodeInfo {
+  max-height: 100%;
+  text-overflow: ellipsis;
+}
+
+.showRow__episodeDescription {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.showRow__episodeToolbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

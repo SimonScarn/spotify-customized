@@ -1,0 +1,63 @@
+.show {
+    overflow-y: overlay;
+    width: 100%;
+    flex: 0.8;
+    background-color: var(--bg-color);
+    color: white;
+    padding-bottom: 100px;
+}
+
+/* header */
+.show__header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+    padding: 10px 20px;
+
+}
+
+.show__header img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.show__title {
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: oblique;
+}
+
+.show__publisher {
+    font-size: 1.25rem;
+}
+
+
+/* body */
+.show__body {
+    display: flex;
+    gap: 60px;
+    padding: 10px 20px;
+}
+
+.show__bodyLeft {
+    flex: .6;
+}
+
+.show__bodyRight {
+    flex: .4;
+}
+
+.show__bodyTitle 
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.show__body hr {
+    height: .5px;
+}
+
+
+

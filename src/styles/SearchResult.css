@@ -1,0 +1,101 @@
+.searchResult {
+  flex: 1 1 150px;
+  position: relative;
+  z-index: 1;
+  height: 200px;
+  width: 150px;
+  max-width: 150px;
+  padding: 20px;
+  cursor: pointer;
+  object-fit: contain;
+
+}
+
+.searchResult:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+  background-color: #c0a1cd;
+  transition: 0.3s ease-in;
+}
+
+.searchResult:hover:before {
+  opacity: 0.4;
+}
+
+.searchResult > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchResult img {
+  height: 150px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.searchResult__title {
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.searchResult__playIcon {
+  background-color: whitesmoke !important;
+  border-radius: 25px !important;
+  cursor: default;
+}
+
+.searchResult p {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.searchResult:hover .item__remove {
+  display: block !important;
+}
+
+.searchResult__playBtn {
+  position: absolute !important;
+  top: calc(65% - 15px);
+  left: calc(50% - 15px);
+  gap: 15px;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: aquamarine !important;
+  visibility: hidden !important;
+  transform: translate(110%, -20%) !important;
+  opacity: 0.1 !important;
+  cursor: default;
+  transition: 0.2s !important;
+}
+
+.searchResult:hover .searchResult__playBtn {
+  visibility: visible !important;
+  transform: translate(110%, -50%) !important;
+  opacity: 1 !important;
+}
+
+.searchResult__deleteBtn {
+  position: absolute !important;
+  top: -5px !important;
+  right: -5px !important;
+  width: 30px !important;
+  height: 30px !important;
+  color: #eee !important;
+  cursor: default !important;
+}
+
+.searchResult:hover .item__toolbar {
+  display: grid;
+  place-items: center;
+}
+
