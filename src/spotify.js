@@ -1,7 +1,7 @@
 import SpotifyWebApi from "spotify-web-api-js";
 
 const AUTH_URL = "https://accounts.spotify.com/authorize";
-const redirect_URI = "http://localhost:3000/callback";
+const redirect_URI = "https://spotify-customized.netlify.app/auth/external/callback";
 
 
 const clientID = "5aed99f573aa4efdb7e16beaaa9bf9bb";
