@@ -11,20 +11,34 @@
   align-items: center;
 }
 
-.login__top div,
-.login__bottom div {
+.login__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.login__section {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
 
-.login__bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3rem;
-  padding: 25px;
-  border-top: 4px solid aqua;
+.login__info {
+  display: grid;
+  place-items: center;
+  max-width: 60%;
+  margin-top: 2rem;
+}
+
+.login__info :first-child {
+  font-weight: 700;
+  margin: 0;
+}
+
+.login__info :nth-child(2) {
+  text-align: center;
+  font-weight: 500;
 }
 
 .login img {
@@ -35,9 +49,8 @@
 
 .login__loginBtn,
 .login__codeBtn,
-.login__codeBtn--custom ,
-.login__appBtn
- {
+.login__codeBtn--custom,
+.login__appBtn {
   width: 200px !important;
   height: 50px !important;
   color: whitesmoke !important;
@@ -53,11 +66,9 @@
 
 .login__codeBtn--custom {
   background-color: green !important;
-  color:  black !important;
+  color: black !important;
 }
 
-
-
 .login__appBtn {
-    color:  black !important;
+  color: black !important;
 }
