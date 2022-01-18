@@ -1,3 +1,5 @@
+app demo: https://spotify-customized.netlify.app/
+
 demo version code(+ server-side code): https://github.com/SimonScarn/spotify-client
 
 This is a custom React web app in development mode. It uses Spotify Web API endpoints to fetch metadata about music artists, albums, tracks, shows, playlists and user's information from the Spotify Data Catalogue.
