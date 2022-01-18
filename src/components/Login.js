@@ -49,6 +49,7 @@ export default function Login() {
           This demo app uses my personal Spotify account. Feel free to (dis)like
           songs, (un)follow artists/shows etc. to test app funcionalities.
         </p>
+          <p>If you see login button there don't click it - wait until the app loads and then until playlists names on the left bottom sidebar appear. There may be no content on the Home page on initial render but it will apear after re-entering this view.</p>
       </div>
     </div>
   );
